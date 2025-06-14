@@ -12,7 +12,7 @@ public class Main {
         // Creating stream from array
         int[] numbers = {1, 2, 3};
         Arrays.stream(numbers)
-        .forEach(n -> System.out.println(n));
+            .forEach(n -> System.out.println(n));
 
         // Creating stream from arbitrary number od objects
         // 1st way
@@ -26,7 +26,7 @@ public class Main {
         // Limiting
         Stream<Double> random = Stream.generate(() -> Math.random());
         random
-        .limit(3)
-        .forEach(n -> System.out.println(n));
+            .limit(3)
+            .forEach(n -> System.out.println(n));
     }    
 }
